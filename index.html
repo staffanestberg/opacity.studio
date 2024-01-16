@@ -1,11 +1,69 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Opacity Studio</title>
+    <style>
+      * {
+        border: 0;
+        margin: 0;
+        outline: 0;
+        box-sizing: border-box;
+      }
+      @font-face {
+        font-family: 'Maison Neue';
+        src: url(MaisonNeue-Demi.woff2);
+        font-weight: normal;
+      }
+      html, body {
+        height: 100%;
+      }
+      body {
+        background: black;
+        color: white;
+        -webkit-font-smoothing: antialiased !important;
+        -moz-osx-font-smoothing: grayscale;
+        font-family: 'Maison Neue', sans-serif;
+      }
+      a[href^='mailto:'] {
+        color: white;
+        font-size: 24px;
+        text-decoration: none;
+        border-bottom: 1px solid white;
+      }
+      img {
+        max-width: 100%;
+      }
+      h1 {
+        font-weight: normal;
+        font-size: 48px;
+        margin: 24px 0;
+        letter-spacing: -1px;
+      }
+      .container {
+        max-width: 1280px;
+        padding: 24px;
+      } 
+      #opacity {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+        z-index: -1;
+      }
+    </style>
   </head>
   <body>
-    OPACITY
-    <br>
-    info@opacity.studio
+    <div class="container">
+      <a class="logo" href="/"><img src="logo.svg" alt="Opacity" width="48" height="auto"></a>
+      <h1>Creative studio focused on crafting innovative digital experiences.</h1>
+      <a class="email" href="mailto:info@opacity.studio">info@opacity.studio</a>
+    </div>
+    <video autoplay muted loop id="opacity">
+      <source src="abstract.mp4" type="video/mp4">
+    </video>
   </body>
-</html>
+</html
